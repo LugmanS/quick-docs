@@ -57,7 +57,7 @@ const LandingPageLayout = () => {
             </div>
         </div>
         <div className='container text-center pb-8'>
-            <h1 className='text-gray-600 text-sm'>© 2022 QuickDocs made with ♥ by Lugman</h1>
+            <h1 className='text-gray-600 text-sm'>Made with ♥ by <a className='underline' target="_blank" href='https://github.com/LugmanS'>Lugman</a></h1>
         </div>
     </div>
   )

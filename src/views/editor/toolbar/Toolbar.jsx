@@ -11,8 +11,8 @@ const Toolbar = () => {
   const closeModal = () => setOpen(false)
 
   return (
-    <div className=' w-[340px] h-full border-r border-e_border bg-white dark:bg-slate-900 p-3 flex flex-col items-center gap-3'>
-      <div className='h-1/2 overflow-scroll'>
+    <div className=' w-[340px] h-full border-r border-e_border bg-white dark:bg-slate-900 p-2 flex flex-col items-center gap-3'>
+      <div className='h-1/2 overflow-y-auto'>
         <p className='text-xs text-e_text mb-3'>Current document sections, drag to reorder</p>
         <Sections/>
       </div>

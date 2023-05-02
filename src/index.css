@@ -18,6 +18,8 @@ body {
 
 .header {
   background-image: url("./assets/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   max-width: 1200px;

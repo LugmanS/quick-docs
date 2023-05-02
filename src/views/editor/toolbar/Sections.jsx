@@ -37,17 +37,17 @@ const SectionCard = ({data, provided, index}) => {
     const onClick = () => setCurrentSection(index)
 
     return(
-        <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} className={`w-full h-12 py-2 pl-2 pr-1 my-3  rounded-md flex items-center gap-1 ${currentSection === index ? "bg-[#212121] border border-[#212121] text-white" : "border border-[#212121]" }`} onClick={onClick}>
+        <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} className={`min-w-full h-12 py-2 pl-2 pr-1 my-3  rounded-md flex items-center gap-1 ${currentSection === index ? "bg-[#212121] border border-[#212121] text-white" : "border border-[#212121]" }`} onClick={onClick}>
             {currentSection === index ? <DragLight width={16} /> : <DragDark width={16}/>}
             <div className='flex items-center justify-between w-full h-full cursor-pointer'>
-                <p className='text-sm w-36 truncate'>{data.name}</p>
+                <p className='text-xs w-36 truncate'>{data.name}</p>
                 {
                     currentSection === index && <div>
                     <button className="hover:bg-neutral-700 transition duration-200 ease-in-out rounded-full p-2" onClick={handleSectionReset}>
-                        <Reset width={16} height={16}/>
+                        <Reset width={14} height={14}/>
                     </button>
                     <button className="hover:bg-neutral-700 transition duration-200 ease-in-out rounded-full p-2" onClick={handleDelete}>
-                        <Delete width={16} height={16}/>
+                        <Delete width={14} height={14}/>
                     </button>
                 </div>
                 }
